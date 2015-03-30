@@ -18,7 +18,7 @@ public class Frame {
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setContentPane(getMainConnexion());
 		f.setVisible(true);
-		f.setSize(200,200);
+		f.setSize(400,400);
 		f.setLocationRelativeTo(null);
 		//f.pack();
 		
@@ -35,7 +35,7 @@ public class Frame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				//test la vérif du mdp 
+				//test la vï¿½rif du mdp 
 				//renvoi vers le panel si ok
 				//erreur 
 				
@@ -72,21 +72,21 @@ public class Frame {
 		return panel;
 	}
 	
-	//méthode déonnexion
+	//mï¿½thode dï¿½onnexion
 	
-	//méthode gestion compte 
-	//méthode affiche info (nom, prénom, mail) + boutton modifier mdp (avec message box)
+	//mï¿½thode gestion compte 
+	//mï¿½thode affiche info (nom, prï¿½nom, mail) + boutton modifier mdp (avec message box)
 	
-	//méthode gestion ligue	
-	//méthode liste des ligues
-	//méthode modifier ligue
-	//méhode ajouter ligue 
-	//méthode supprimer ligue 
+	//mï¿½thode gestion ligue	
+	//mï¿½thode liste des ligues
+	//mï¿½thode modifier ligue
+	//mï¿½hode ajouter ligue 
+	//mï¿½thode supprimer ligue 
 	
-	//méthode ligue (nom de l'admin, liste employé)
-	//méthode ajoutEmployé 
-	//méthode modif emplyé
-	//méthode supp employé 
+	//mï¿½thode ligue (nom de l'admin, liste employï¿½)
+	//mï¿½thode ajoutEmployï¿½ 
+	//mï¿½thode modif emplyï¿½
+	//mï¿½thode supp employï¿½ 
 	//
 	
 	
