@@ -14,7 +14,7 @@ public class Fenetre extends JFrame {
 	
 	public Fenetre(GestionPersonnel gestionPersonnel){
 		setTitle("Application bureau");
-		setSize(400, 500);
+		setSize(550, 500);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
@@ -23,8 +23,6 @@ public class Fenetre extends JFrame {
         p1 = new Accueil();
         p2 = new Ligues();
         p3 = new Compte();
-        
-        //p3.add(new JTextField());
         
         t.addTab("Accueil",p1);
         t.addTab("Gestion des ligues",p2);
