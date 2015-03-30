@@ -1,26 +1,39 @@
 package applicationbureau;
 
 import javax.swing.JFrame;
-import java.awt.*;
-
-//Class qui génère la Frame de l'application, on lui met la class onglet en ContentPane
+import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
 
 import personnel.GestionPersonnel;
 
 public class Fenetre extends JFrame {
 	
 	GestionPersonnel gestionPersonnel;
-	JFrame f;
+	JTabbedPane t;
+	JPanel p1,p2,p3;
 	
 	public Fenetre(GestionPersonnel gestionPersonnel){
-		f = new JFrame();
-		f.setTitle("Application bureau");
-		f.setSize(400, 500);
-		f.setLocationRelativeTo(null);
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.setVisible(true);
-		Container contentPane = f.getContentPane();
-        contentPane.add(new Onglets());
+		setTitle("Application bureau");
+		setSize(400, 500);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		t = new JTabbedPane();
+        p1 = new Accueil();
+        p2 = new Ligues();
+        p3 = new Compte();
+        
+        //p3.add(new JTextField());
+        
+        t.addTab("Accueil",p1);
+        t.addTab("Gestion des ligues",p2);
+        t.addTab("Gestion du compte",p3);
+        
+        t.setTabPlacement(JTabbedPane.TOP);
+        t.setVisible(true);
+        
+        add(t);
 		
 		this.gestionPersonnel = gestionPersonnel;
 	}
