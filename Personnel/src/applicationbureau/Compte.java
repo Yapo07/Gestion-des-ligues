@@ -48,10 +48,15 @@ public class Compte extends JPanel{
 				{
 					System.out.println("ca marche !!!");
 					//JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
-					JOptionPane.showInputDialog("Entrez un mpd : ", null);
+					JOptionPane b1 = new JOptionPane();
+					b1.showInputDialog("Entrez un mpd : ", null);
 					/*if ()
 					{
-					
+						
+					}
+					else 
+					{
+						System.out.println("back");
 					}*/
 				}
 				
