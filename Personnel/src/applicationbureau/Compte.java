@@ -1,7 +1,11 @@
 package applicationbureau;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel; 
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -33,8 +37,28 @@ public class Compte extends JPanel{
 		txtEmail = new JTextField();
 		txtEmail.setColumns(10);
 		txtEmail.setBounds(141, 123, 86, 20);
-		btnModifierMdp = new JButton("Modifier MDP");
+		final JButton btnModifierMdp = new JButton("Modifier MDP");
 		btnModifierMdp.setBounds(84, 200, 110, 23);
+		btnModifierMdp.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				if (e.getSource().equals(btnModifierMdp))
+				{
+					System.out.println("ca marche !!!");
+					//JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
+					JOptionPane.showInputDialog("Entrez un mpd : ", null);
+					/*if ()
+					{
+					
+					}*/
+				}
+				
+				
+			}
+
+		});
 		
 		add(lblNom);
 		add(txtNom);
