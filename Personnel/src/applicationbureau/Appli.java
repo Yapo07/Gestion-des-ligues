@@ -8,7 +8,7 @@ import javax.swing.SwingUtilities;
 public class Appli {
 
 	public static void main(String[] args) {
-		GestionPersonnel gp = personnel.GestionPersonnel.getGestionPersonnel();
+		final GestionPersonnel gp = personnel.GestionPersonnel.getGestionPersonnel();
 		JDBC db = new JDBC();
 		String req = "SELECT * FROM utilisateur";
 		db.ExecReq(req);
